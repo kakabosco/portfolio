@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Jeko';
+  src: url('./fonts/Jeko-Medium.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jeko';
+  src: url('./fonts/Jeko-ExtraBold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jeko';
+  src: url('./fonts/Jeko-ExtraLight.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
