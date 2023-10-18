@@ -7,27 +7,27 @@ const Header = () => {
   return (
     <S.HeaderContainer>
       <S.Logo src={logo} alt="Logo Kode by Bosco" />
-      <S.LinksContainer>
+      <S.NavContainer>
         <nav>
-          <S.Links>
-            <S.LinkItem as="li">Home</S.LinkItem>
-            <S.LinkItem as="li">Skills</S.LinkItem>
-            <S.LinkItem as="li">About</S.LinkItem>
-            <S.LinkItem as="li">Projects</S.LinkItem>
-            <S.LinkItem as="li">Contact</S.LinkItem>
-          </S.Links>
+          <S.Sections>
+            <S.SectionItem as="li">Home</S.SectionItem>
+            <S.SectionItem as="li">Skills</S.SectionItem>
+            <S.SectionItem as="li">About</S.SectionItem>
+            <S.SectionItem as="li">Projects</S.SectionItem>
+            <S.SectionItem as="li">Contact</S.SectionItem>
+          </S.Sections>
         </nav>
         <S.LanguageSelector>
-          <S.LinkItem as="a">PT</S.LinkItem>
-          <S.LinkItem as="span">|</S.LinkItem>
-          <S.LinkItem as="a" className="selected">
+          <S.SectionItem as="a">PT</S.SectionItem>
+          <S.SectionItem as="span">|</S.SectionItem>
+          <S.SectionItem as="a" className="selected">
             EN
-          </S.LinkItem>
+          </S.SectionItem>
         </S.LanguageSelector>
         <a href="#">
           <img src={sun} alt="Trocar tema" />
         </a>
-      </S.LinksContainer>
+      </S.NavContainer>
     </S.HeaderContainer>
   )
 }

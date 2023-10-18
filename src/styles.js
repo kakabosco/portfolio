@@ -29,11 +29,13 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${colors.offwhite};
   }
 
-  .container {
-    max-width: 1024px;
-    width: 100%;
-    margin: 0 auto;
-  }
+  `
+
+export const Container = styled.div`
+  max-width: 1024px;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
 `
 
 export const Title = styled.h2`

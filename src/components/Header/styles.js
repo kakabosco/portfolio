@@ -13,7 +13,7 @@ export const Logo = styled.img`
   height: 80px;
 `
 
-export const LinksContainer = styled.div`
+export const NavContainer = styled.div`
   display: flex;
   align-items: center;
   text-align: center;
@@ -27,13 +27,13 @@ export const LinksContainer = styled.div`
   }
 `
 
-export const Links = styled.ul`
+export const Sections = styled.ul`
   display: flex;
   margin-right: 48px;
   gap: 32px;
 `
 
-export const LinkItem = styled(TertiaryTitle)``
+export const SectionItem = styled(TertiaryTitle)``
 
 export const LanguageSelector = styled.div`
   display: flex;
