@@ -5,10 +5,10 @@ export const HomeSection = styled.section`
   position: relative;
 
   > img {
-    width: 900px;
+    width: 800px;
     position: absolute;
     top: -144px;
-    right: 50px;
+    right: 60px;
   }
 `
 

@@ -1,5 +1,6 @@
-import Header from './components/Header'
-import Home from './components/Home'
+import Header from './containers/Header'
+import Home from './containers/Home'
+import Skills from './containers/Skills'
 
 import GlobalStyle from './styles'
 
@@ -9,6 +10,7 @@ function App() {
       <GlobalStyle />
       <Header />
       <Home />
+      <Skills />
     </>
   )
 }
