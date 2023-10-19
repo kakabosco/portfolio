@@ -29,6 +29,27 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${colors.offwhite};
   }
 
+    ::-webkit-scrollbar {
+    width: 10px;
+
+    &-button {
+      display: none;
+    }
+
+    &-track {
+      border-radius: 10px;
+      background: ${colors.offwhite};
+    }
+
+    &-thumb {
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.3);
+
+      &:hover {
+          background: rgba(0, 0, 0, 0.6);
+        }
+    }
+  }
   `
 
 export const Container = styled.div`

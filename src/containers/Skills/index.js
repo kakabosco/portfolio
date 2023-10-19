@@ -1,6 +1,7 @@
 import CardSkillsList from '../../components/CardSkillsList'
 
-import { SkillsContainer, SkillsTitle } from './styles'
+import { Title } from '../../styles'
+import { SkillsContainer } from './styles'
 
 const Skills = () => {
   const skillsData = [
@@ -35,7 +36,7 @@ const Skills = () => {
 
   return (
     <SkillsContainer as="section" id="skills">
-      <SkillsTitle>Skills</SkillsTitle>
+      <Title>Skills</Title>
       <CardSkillsList skills={skillsData} />
     </SkillsContainer>
   )

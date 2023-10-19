@@ -1,8 +1,9 @@
 import Header from './containers/Header'
-import Home from './containers/Home'
+import Home from './components/Home'
 import Skills from './containers/Skills'
 
 import GlobalStyle from './styles'
+import About from './components/About'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <Home />
       <Skills />
+      <About />
     </>
   )
 }

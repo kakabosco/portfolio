@@ -1,7 +1,7 @@
 import github from '../../assets/images/github.png'
 import linkedin from '../../assets/images/linkedin.png'
 import download from '../../assets/images/download.png'
-import portraitHome from '../../assets/images/kaique-home.svg'
+import kaiqueHome from '../../assets/images/kaique-home.svg'
 
 import { SecondaryTitle, Title } from '../../styles'
 import * as S from './styles'
@@ -41,7 +41,7 @@ const Home = () => {
           </S.CVLink>
         </S.LinksContainer>
       </S.HomeContainer>
-      <img src={portraitHome} alt="Kaique's portrait home page" />
+      <img src={kaiqueHome} alt="Stylized photo of Kaique looking down" />
     </S.HomeSection>
   )
 }
