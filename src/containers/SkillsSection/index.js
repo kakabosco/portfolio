@@ -1,4 +1,4 @@
-import CardSkillsList from '../../components/CardSkillsList'
+import SkillsList from '../../components/SkillsList'
 
 import { Title } from '../../styles'
 import { SkillsContainer } from './styles'
@@ -37,7 +37,7 @@ const Skills = () => {
   return (
     <SkillsContainer as="section" id="skills">
       <Title>Skills</Title>
-      <CardSkillsList skills={skillsData} />
+      <SkillsList skills={skillsData} />
     </SkillsContainer>
   )
 }

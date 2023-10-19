@@ -1,4 +1,4 @@
-import kaiqueAbout from '../../assets/images/kaique-about.svg'
+import { ReactComponent as KaiqueAboutSVG } from '../../assets/images/kaique-about.svg'
 
 import { Title } from '../../styles'
 import * as S from './styles'
@@ -55,7 +55,7 @@ const About = () => {
         </S.AboutCardWrapper>
         <S.AboutImageWrapper>
           <S.ImageCard>
-            <img src={kaiqueAbout} alt="Stylized photo of Kaique smiling" />
+            <KaiqueAboutSVG />
           </S.ImageCard>
         </S.AboutImageWrapper>
       </S.AboutContent>

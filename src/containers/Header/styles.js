@@ -1,30 +1,33 @@
 import styled from 'styled-components'
-import { TertiaryTitle } from '../../styles'
+
+import { ReactComponent as LogoSVG } from '../../assets/images/logo.svg'
+import { ReactComponent as SunSVG } from '../../assets/images/sun.svg'
+
+import { TertiaryTitle, colors } from '../../styles'
 
 export const HeaderContainer = styled.header`
+  position: sticky;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 32px 5%;
+  padding: 24px 5%;
+  z-index: 99;
 `
 
-export const Logo = styled.img`
-  width: 150px;
-  height: 80px;
+export const Logo = styled(LogoSVG)`
+  fill: ${colors.darkGreen};
 `
 
 export const NavContainer = styled.div`
   display: flex;
   align-items: center;
   text-align: center;
+`
 
-  a {
-    height: 32px;
-
-    img {
-      width: 32px;
-    }
-  }
+export const ThemeSwitch = styled(SunSVG)`
+  width: 32px;
+  height: 32px;
+  fill: ${colors.black};
 `
 
 export const Sections = styled.ul`

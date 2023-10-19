@@ -1,7 +1,8 @@
-import github from '../../assets/images/github.png'
-import linkedin from '../../assets/images/linkedin.png'
-import download from '../../assets/images/download.png'
-import kaiqueHome from '../../assets/images/kaique-home.svg'
+// import github from '../../assets/images/github.png'
+import { ReactComponent as KaiqueHome } from '../../assets/images/kaique-home.svg'
+import { ReactComponent as Github } from '../../assets/images/github.svg'
+import { ReactComponent as Linkedin } from '../../assets/images/linkedin.svg'
+import { ReactComponent as Download } from '../../assets/images/download.svg'
 
 import { SecondaryTitle, Title } from '../../styles'
 import * as S from './styles'
@@ -25,23 +26,23 @@ const Home = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <img src={github} alt="Github" />
+              <Github />
             </a>
             <a
               href="https://www.linkedin.com/in/kaique-bosco/"
               target="_blank"
               rel="noreferrer"
             >
-              <img src={linkedin} alt="Linkedin" />
+              <Linkedin />
             </a>
           </S.SocialMediaLinks>
           <S.CVLink href="#">
-            <img src={download} alt="Download Curriculum Vitae" />
+            <Download />
             <span>CV</span>
           </S.CVLink>
         </S.LinksContainer>
       </S.HomeContainer>
-      <img src={kaiqueHome} alt="Stylized photo of Kaique looking down" />
+      <KaiqueHome />
     </S.HomeSection>
   )
 }

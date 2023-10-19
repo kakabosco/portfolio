@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 import { colors } from '../../styles'
-import { SkillsContainer } from '../../containers/Skills/styles'
+import { SkillsContainer } from '../../containers/SkillsSection/styles'
 
 export const AboutContainer = styled(SkillsContainer)``
 
@@ -47,8 +47,15 @@ export const ImageCard = styled.div`
   border: 2px solid ${colors.black};
   box-shadow: 16px -16px 4px rgba(40, 37, 37, 0.7);
 
-  img {
-    width: 480px;
+  svg {
+    min-width: 480px;
     height: 480px;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+    fill: ${colors.black};
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 `

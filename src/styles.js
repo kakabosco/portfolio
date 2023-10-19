@@ -17,11 +17,12 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
     font-size: 24px;
     font-weight: 300;
     line-height: 1.4em;
     font-family: 'Inconsolata', monospace;
-    list-style: none;
+    scroll-behavior: smooth;
   }
 
   body {

@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types'
-import CardSkill from '../CardSkill'
+import CardSkill from '../Skill'
 import { CardList } from './styles'
 
-const CardSkillsList = ({ skills }) => {
+const SkillsList = ({ skills }) => {
   if (!skills) {
     return <h3>No skills available</h3>
   }
@@ -20,7 +20,7 @@ const CardSkillsList = ({ skills }) => {
   )
 }
 
-CardSkillsList.propTypes = {
+SkillsList.propTypes = {
   skills: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string.isRequired,
@@ -29,4 +29,4 @@ CardSkillsList.propTypes = {
   )
 }
 
-export default CardSkillsList
+export default SkillsList

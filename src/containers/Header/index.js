@@ -1,12 +1,9 @@
-import logo from '../../assets/images/logo.png'
-import sun from '../../assets/images/sun.png'
-
 import * as S from './styles'
 
 const Header = () => {
   return (
     <S.HeaderContainer>
-      <S.Logo src={logo} alt="Logo Kode by Bosco" />
+      <S.Logo />
       <S.NavContainer>
         <nav>
           <S.Sections>
@@ -24,9 +21,7 @@ const Header = () => {
             EN
           </S.SectionItem>
         </S.LanguageSelector>
-        <a href="#">
-          <img src={sun} alt="Trocar tema" />
-        </a>
+        <S.ThemeSwitch />
       </S.NavContainer>
     </S.HeaderContainer>
   )

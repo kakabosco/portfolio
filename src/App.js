@@ -1,9 +1,9 @@
 import Header from './containers/Header'
-import Home from './components/Home'
-import Skills from './containers/Skills'
+import Home from './components/HomeSection'
+import Skills from './containers/SkillsSection'
+import About from './components/AboutSection'
 
 import GlobalStyle from './styles'
-import About from './components/About'
 
 function App() {
   return (

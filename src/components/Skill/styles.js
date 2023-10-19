@@ -10,9 +10,11 @@ export const CardContainer = styled.div`
   border-radius: 20px;
   border: 2px solid ${colors.black};
   cursor: pointer;
+  transition: all 0.2s linear;
 
   &:hover {
     color: ${colors.offwhite};
+    transform: scale(1.05);
     background-color: ${colors.darkGreen};
     border: 2px solid ${colors.darkGreen};
   }

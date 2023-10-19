@@ -1,14 +1,17 @@
 import styled from 'styled-components'
+
 import { Container, SecondaryTitle, colors } from '../../styles'
 
 export const HomeSection = styled.section`
   position: relative;
 
-  > img {
-    width: 800px;
+  > svg {
     position: absolute;
     top: -144px;
     right: 60px;
+    width: 800px;
+    height: 1172px;
+    fill: ${colors.black};
   }
 `
 
@@ -57,8 +60,10 @@ export const SocialMediaLinks = styled.div`
     background-color: ${colors.darkGreen};
     border-radius: 50%;
 
-    img {
+    svg {
       width: 32px;
+      height: 32px;
+      fill: ${colors.offwhite};
     }
   }
 `
@@ -74,8 +79,10 @@ export const CVLink = styled.a`
   background-color: ${colors.darkGreen};
   text-decoration: none;
 
-  img {
+  svg {
     width: 24px;
+    height: 24px;
+    fill: ${colors.offwhite};
   }
 
   span {
