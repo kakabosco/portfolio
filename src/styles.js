@@ -56,7 +56,7 @@ const GlobalStyle = createGlobalStyle`
 export const Container = styled.div`
   max-width: 1024px;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0 auto;
 `
 

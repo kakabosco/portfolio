@@ -16,7 +16,7 @@ export const HomeSection = styled.section`
 `
 
 export const HomeContainer = styled(Container)`
-  height: calc(100vh - 144px);
+  min-height: calc(100vh - 144px);
 `
 
 export const TextContainer = styled.div`
@@ -45,6 +45,14 @@ export const LinksContainer = styled.div`
   display: flex;
   gap: 32px;
   margin-top: 48px;
+
+  a {
+    transition: transform 0.3s linear;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 `
 
 export const SocialMediaLinks = styled.div`

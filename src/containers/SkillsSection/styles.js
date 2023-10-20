@@ -7,5 +7,4 @@ export const SkillsContainer = styled(Container)`
   flex-direction: column;
   justify-content: center;
   gap: 96px;
-  margin-block: 48px;
 `
