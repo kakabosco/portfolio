@@ -3,18 +3,27 @@ import styled from 'styled-components'
 import { ReactComponent as LogoSVG } from '../../assets/images/logo.svg'
 import { ReactComponent as SunSVG } from '../../assets/images/sun.svg'
 
-import { TertiaryTitle, colors } from '../../styles'
+import { colors } from '../../styles'
 
 export const HeaderContainer = styled.header`
-  position: sticky;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 24px 5%;
-  z-index: 99;
+  > div {
+    &:first-child {
+      display: flex;
+      justify-content: flex-end;
+      padding: 2.5vw 5vw 1.25vw;
+    }
+
+    &:nth-child(2) {
+      display: flex;
+      justify-content: flex-start;
+      padding: 0 5vw;
+    }
+  }
 `
 
 export const Logo = styled(LogoSVG)`
+  width: 150.6px;
+  height: 64px;
   fill: ${colors.darkGreen};
 `
 
@@ -22,6 +31,16 @@ export const NavContainer = styled.div`
   display: flex;
   align-items: center;
   text-align: center;
+
+  a,
+  span {
+    font-size: 24px;
+    font-weight: 500;
+    color: ${colors.black};
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-family: 'Jeko', sans-serif;
+  }
 `
 
 export const ThemeSwitch = styled(SunSVG)`
@@ -36,24 +55,16 @@ export const Sections = styled.ul`
   gap: 32px;
 `
 
-export const SectionItem = styled(TertiaryTitle)``
+export const SectionItem = styled.li``
 
 export const LanguageSelector = styled.div`
   display: flex;
   align-items: center;
   margin-right: 32px;
 
-  a {
-    height: 28px;
-  }
-
   span {
-    &:nth-child(2) {
-      margin-inline: 4px;
-    }
-  }
-
-  .selected {
-    text-decoration: underline;
+    margin-inline: 4px;
   }
 `
+
+export const LanguageItem = styled.a``

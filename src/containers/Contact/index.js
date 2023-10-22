@@ -2,7 +2,7 @@ import * as S from './styles'
 
 const Contact = () => {
   return (
-    <S.ContactSection>
+    <S.ContactSection id="contact">
       <S.ContactContainer>
         <S.ContactTitle>Contact</S.ContactTitle>
         <S.Form>

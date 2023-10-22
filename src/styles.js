@@ -22,6 +22,7 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 300;
     line-height: 1.4em;
     font-family: 'Inconsolata', monospace;
+    text-decoration: none;
     scroll-behavior: smooth;
   }
 

@@ -2,27 +2,32 @@ import styled from 'styled-components'
 
 import { Container, SecondaryTitle, colors } from '../../styles'
 
-export const HomeSection = styled.section`
-  position: relative;
-
-  > svg {
-    position: absolute;
-    top: -144px;
-    right: 60px;
-    width: 800px;
-    height: 1172px;
-    fill: ${colors.black};
-  }
-`
+export const HomeSection = styled.section``
 
 export const HomeContainer = styled(Container)`
-  min-height: calc(100vh - 144px);
+  min-height: calc(100vh - 170px);
+  max-height: calc(100vh - 170px);
+  display: flex;
+  align-items: center;
+  gap: 48px;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  > svg {
+    width: 550px;
+    height: 788px;
+    fill: ${colors.black};
+    overflow: visible;
+  }
 `
 
 export const TextContainer = styled.div`
   max-width: 620px;
   width: 100%;
-  padding-top: 106px;
 `
 
 export const Description = styled.p`
